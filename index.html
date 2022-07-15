@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa5bc2ed98.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Papito Rafffle Page</title>
+  </head>
+  <body class="body">
+    <header>
+      <div class="image">
+        <!-- <h1>Papito Bistro</h1> -->
+        <img src="./img/logo.jpg" alt="Logo image" />
+      </div>
+      <form>
+        <h2 class="tel-h2">Please enter your 11-digit phone number</h2>
+        <p>(This number would be required to redeem your winnings)</p>
+        <!-- <a target="_blank" href="codes.html">codes</a> -->
+        <label class="label1" for="text">
+          <input type="text" id="tel" name="number" placeholder="0XXXXXXXXXX" />
+          <button class="btn btn-form btn-tel">Enter</button>
+        </label>
+        <h2>Enter your 4-digit code</h2>
+        <label class="label2" for="text">
+          <input type="text" id="number" name="number" />
+          <button class="btn btn-form btn-number">Enter</button>
+        </label>
+      </form>
+      <div class="user-feedback">
+        <div class="feedback-hidden winner-feedback">
+          <h2 class="feedback-text">
+            Congratulations! 🎊🎊 You have entered a winning code
+          </h2>
+          <h3>Your winnings:</h3>
+          <p>This __ is redeemable __</p>
+          <button class="btn btn-close">
+            <i class="fa-solid icon fa-xmark"></i>
+          </button>
+        </div>
+        <div class="feedback-hidden loser-feedback">
+          <h2 class="feedback-text">
+            Sorry, the code you entered is not a winning one. Please try again
+          </h2>
+          <div class="funfact">
+            <h3>Did you know that?</h3>
+            <h2 class="fun-fact"></h2>
+          </div>
+          <button class="btn btn-close">
+            <i class="fa-solid icon fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
