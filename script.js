@@ -136,31 +136,6 @@ const randomCode = length => {
 };
 // randomCode(6750);
 
-// const promo = {
-//   discountVouchers: {
-//     disc100: randomCode(600),
-//     disc10p: randomCode(300),
-//     disc200: randomCode(300),
-//     disc500: randomCode(100),
-//     disc20p: randomCode(150),
-//     freeDelivery: randomCode(600),
-//   },
-//   freeFood: {
-//     freeChips: randomCode(500),
-//     PRP: randomCode(500),
-//   },
-//   brandedGifts: {
-//     wineGlasses: randomCode(20),
-//     keyHolders: randomCode(25),
-//     wristbands: randomCode(200),
-//     cups: randomCode(50),
-//     shirts: randomCode(10),
-//     bags: randomCode(10),
-//     hats: randomCode(10),
-//   },
-//   losers: randomCode(3375),
-// };
-
 // function to generate coupons property values
 // const slicePosition = function (start, end) {
 //   return newArr.slice(start, end);

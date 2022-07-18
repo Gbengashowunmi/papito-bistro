@@ -6,7 +6,7 @@
 
 .body {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   font-family: 'Edu NSW ACT Foundation', cursive;
   display: flex;
   /* gap: 500px; */
