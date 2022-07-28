@@ -21,16 +21,18 @@
       <div class="image">
         <!-- <h1>Papito Bistro</h1> -->
         <img src="./img/logo.jpg" alt="Logo image" />
+        <div class="line left-line"></div>
+        <div class="line right-line"></div>
       </div>
       <form>
         <h2 class="tel-h2">Please enter your 11-digit phone number</h2>
         <p>(This number would be required to redeem your winnings)</p>
-       <!-- <a target="_blank" href="codes.html">codes</a> -->
+        <!-- <a target="_blank" href="codes.html">codes</a> -->
         <label class="label1" for="text">
           <input type="text" id="tel" name="number" placeholder="0XXXXXXXXXX" />
           <button class="btn btn-form btn-tel">Enter</button>
         </label>
-        <h2>Enter your 4-digit code</h2>
+        <h2 class="label2">Enter your 6-digit code</h2>
         <label class="label2" for="text">
           <input type="text" id="number" name="number" />
           <button class="btn btn-form btn-number">Enter</button>
@@ -39,20 +41,34 @@
       <div class="user-feedback">
         <div class="feedback-hidden winner-feedback">
           <h2 class="feedback-text">
-            Congratulations! 🎊🎊 You have entered a winning code
+            Congratulations <span class="user-number"></span>!🎉🎉 You have
+            entered winning code
+            <span class="congrats-text"></span>
           </h2>
-          <h3>Your winnings:</h3>
-          <p>This __ is redeemable __</p>
+          <h3>Your winning: 1 <span class="gift-text"></span></h3>
+          <div>
+            <p>How to redeem your winnings</p>
+            <br />
+            <ol>
+              <li>Take a screenshot of this page.</li>
+              <li>
+                Click
+                <a target="_blank" href="https://wa.link/ugeu5a"> here </a>to
+                send it on Whatsapp
+              </li>
+              <li>All winnings can be redeemed on your next order</li>
+            </ol>
+          </div>
           <button class="btn btn-close">
             <i class="fa-solid icon fa-xmark"></i>
           </button>
         </div>
         <div class="feedback-hidden loser-feedback">
           <h2 class="feedback-text">
-            Sorry, the code you entered is not a winning one. Please try again
+            Oops! You just missed it. Please try again
           </h2>
           <div class="funfact">
-            <h3>Did you know that?</h3>
+            <h3>Hey! Did you know that?</h3>
             <h2 class="fun-fact"></h2>
           </div>
           <button class="btn btn-close">

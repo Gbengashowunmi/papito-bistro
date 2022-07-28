@@ -1,3 +1,6 @@
+html {
+  font-size: 10px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +9,10 @@
 
 .body {
   width: 100vw;
-  height: 120vh;
+  height: 100%;
   font-family: 'Edu NSW ACT Foundation', cursive;
   display: flex;
-  /* gap: 500px; */
-  /* align-items: center; */
   justify-content: center;
-  /* margin-top: 300px; */
   display: relative;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.1),
@@ -22,7 +22,7 @@
     ),
     url(./img/background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 header {
@@ -33,13 +33,32 @@ header {
   margin-top: 50px;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   margin-bottom: 48px;
 }
-
+.image {
+  position: relative;
+  width: max-content;
+  margin-left: -22px;
+}
 img {
   width: 420px;
   height: auto;
+}
+.line {
+  background-color: #51cf66;
+  border: 1px solid #51cf66;
+  position: absolute;
+}
+.left-line {
+  top: 55%;
+  left: 0;
+  width: 43px;
+}
+.right-line {
+  top: 53%;
+  right: 0;
+  width: 45px;
 }
 .user-feedback {
   display: flex;
@@ -93,11 +112,22 @@ form {
   /* margin-top: 400px; */
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h2,
+h3 {
+  font-size: 2rem;
+  /* font-weight: 500; */
+}
+li {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .label1,
 .label2 {
   position: relative;
+  height: 100%;
 }
 #number,
 #tel {
@@ -147,6 +177,9 @@ p {
 }
 .h1 {
   color: red;
+}
+a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 600px) {
