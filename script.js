@@ -107,7 +107,8 @@ function match(value) {
           giftText.textContent = `${giftType[0]}`;
           winnerFeedback.classList.remove('feedback-hidden');
           winnerFeedback.classList.add('feedback-display');
-        } else return;
+          return giftType[1].some(code => code == winner)
+} 
       });
     }
   }
