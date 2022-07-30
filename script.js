@@ -123,12 +123,14 @@ btnNumber.addEventListener('click', function (e) {
   number.value = '';
 
   //if not valid
+if (match(code) == false) {
   //add random  fun fact
   factRandom();
   //display loser message
-  /*loserFeedback.classList.remove('feedback-hidden');
+  loserFeedback.classList.remove('feedback-hidden');
   loserFeedback.classList.add('feedback-display');
-  return;*/
+  return;
+}
 });
 
 btnClose.forEach(btn =>
