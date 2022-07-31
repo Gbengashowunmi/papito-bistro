@@ -97,10 +97,7 @@ function match(value) {
       // console.log(giftType[1]);
       const check = giftType[1].find(code => (code === winner));
           
-
-
   //if  valid
-
          if(check === winner){
           congratsText.textContent = `${giftType[1].indexOf(winner) + 1}!!`;
           giftText.textContent = `${giftType[0]}`;
@@ -109,7 +106,6 @@ function match(value) {
       }    
 
   //if not valid
-
       else{
         //add random  fun fact
   factRandom();
@@ -119,11 +115,8 @@ function match(value) {
       }
           return check
         }
-}
-        
+  }
 } 
-        
-
 // match(`otq9x2`);
 
 btnNumber.addEventListener('click', function (e) {
@@ -139,9 +132,6 @@ btnNumber.addEventListener('click', function (e) {
   }
   //clear input field
   number.value = '';
-
-
-
 });
 
 btnClose.forEach(btn =>
