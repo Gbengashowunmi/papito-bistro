@@ -95,43 +95,43 @@ function match(value) {
     const categories = data;
     for (const giftType of Object.entries(categories[1])) {
       // console.log(giftType[1]);
-      const check = giftType[1].find(code => {
-        if (code === winner) {
-          // console.log(
-          //   `You have entered winning code ${
-          //     giftType[1].indexOf(winner) + 1
-          //   }. You have won a ${giftType[0]}`
-          // );
-          //
+      const check = giftType[1].find(code => (code === winner));
+          
+  //if  valid
+         if(check === winner){
           congratsText.textContent = `${giftType[1].indexOf(winner) + 1}!!`;
           giftText.textContent = `${giftType[0]}`;
           winnerFeedback.classList.remove('feedback-hidden');
           winnerFeedback.classList.add('feedback-display');
-          return giftType[1].some(code => code == winner)
-} 
-      });
-    }
-  }
-}
-// match(`otq9x2`);
-
-btnNumber.addEventListener('click', function (e) {
-  e.preventDefault();
-  labelNum.forEach(label => label.classList.add('feedback-hidden'));
-  const code = number.value;
-  match(code);
-  //clear input field
-  number.value = '';
+      }    
 
   //if not valid
-if (match(code) == false) {
-  //add random  fun fact
+      else{
+        //add random  fun fact
   factRandom();
   //display loser message
   loserFeedback.classList.remove('feedback-hidden');
   loserFeedback.classList.add('feedback-display');
-  return;
-}
+      }
+          return check
+        }
+  }
+} 
+// match(`otq9x2`);
+
+btnNumber.addEventListener('click', function (e) {
+  e.preventDefault();
+  const code = number.value;
+  if(code ===''){
+    alert('Please enter your 6-digit code')
+  }
+
+  else{
+    match(code);
+    labelNum.forEach(label => label.classList.add('feedback-hidden'));
+  }
+  //clear input field
+  number.value = '';
 });
 
 btnClose.forEach(btn =>
